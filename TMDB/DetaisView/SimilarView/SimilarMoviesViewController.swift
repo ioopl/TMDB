@@ -54,7 +54,7 @@ final class SimilarMoviesViewController: UIViewController, UICollectionViewDataS
                 break
             }
         }
-        viewModel.fetchData(movieID: movieID)
+        viewModel.fetchSimilarMovies(movieID: movieID)
     }
 
     // MARK: DataSource

@@ -1,10 +1,3 @@
-//
-//  TMDBTests.swift
-//  TMDBTests
-//
-//  Created by Umair Hasan on 24/10/2025.
-//
-
 import XCTest
 @testable import TMDB
 

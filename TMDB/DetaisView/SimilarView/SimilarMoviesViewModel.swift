@@ -16,7 +16,7 @@ final class SimilarMoviesViewModel {
 
     var onChange: ((SimilarMoviesState) -> Void)?
 
-    func fetchData(movieID: Int) {
+    func fetchSimilarMovies(movieID: Int) {
         state = .loading
         genres.fetchGenresIfNeeded { [weak self] in
             guard let self else { return }

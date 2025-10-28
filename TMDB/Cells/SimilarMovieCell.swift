@@ -5,9 +5,9 @@ final class SimilarMovieCell: UICollectionViewCell {
     
     static let reuseID = "SimilarMovieCell"
     private let imageView = UIImageView()
-    private let title = UILabel()
+    internal let title = UILabel()
     
-    private let genresLabel = UILabel()
+    internal let genresLabel = UILabel()
     private let ratingTag = TagView()
     
     func configure(title: String, posterPath: String?, rating: Double, genresLine: String) {

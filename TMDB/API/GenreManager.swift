@@ -5,7 +5,6 @@ protocol GenreProviding {
     func fetchGenresIfNeeded(completion: @escaping () -> Void)
 }
 
-
 /// A global manager that caches all movie genres so we only fetch them once per app session.
 final class GenreManager: GenreProviding {
     
