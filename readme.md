@@ -59,12 +59,6 @@ The APIManager and GenreManager are tested using mock protocol implementations, 
 **Frameworks:** Swift  
 
 The App follows a clean separation of concerns:
-- **Model / Service:** `ProximityBLE` handles all CoreBluetooth logic (advertising, scanning, GATT setup, lifecycle).
-- **ViewModel:** e.g. `BLEViewModel`, `MainViewModel` expose observable state (`@Published`) to drive SwiftUI views.
-- **View:** e.g. `BLEView`, `RadarBLEView`, `MainVew` render state and relay user actions upward via closures or VM methods.
-- **Coordinator:** `AppCoordinator` handles navigation flow (Splash → Tabs → Main/BLE).
-
-Error handling, empty states, and permission prompts (for Bluetooth authorization) are implemented to give clear user feedback.
 
 ---
 
